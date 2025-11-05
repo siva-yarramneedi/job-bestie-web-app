@@ -1,0 +1,54 @@
+		=> creating a job portal using html,css and js along with backend springboot and microservices...
+
+Name of Job Portal:-
+------------------
+				  luckyjob or jobbook or quick job or merajob or jobnote or jobfriend or jobbestie
+					or job-overflow(based on stack overflow website)
+
+			=> Job Window 
+				or
+			=> Job Bestie
+Based on that job portal make a shortcut-icon or favicon...
+
+					
+					JOB BESTIE APPLICATION
+					======================
+
+Day-1:-			17/11/2024	Sunday
+=====				-------------------
+					
+	
+Title:-
+----
+		By researching or seeing from different sites, they usually using
+			-> starting their website name then
+			-> purpose of website
+			-> some compliment
+
+=> after discussing with ChatGpt concluded below title to make the page 'SEO friendly' | u can see chat history under 'SEO friendly Job title' in chatgpt.
+
+	
+	My Website Title is => 
+
+			Job Bestie - Find Freshers & Experienced Jobs Online | Daily Updates
+			
+
+Meta Description:-
+----------------
+
+		"Discover the latest jobs for freshers and experienced professionals with Job Bestie.
+		 Find top openings, daily updates, and apply online with ease."
+
+Heading Tags(H1):-
+-----------------
+
+	 Ensure your main page heading reinforces keywords like:
+=>     "Welcome to Job Bestie - Freshers & Experienced Jobs Platform."
+
+
+Favicon:-
+-------
+		=> favicon is created by using microsoft copilot ai, by giving JB as text,
+		   later compressed it to 32x32 pixels by using "realfavicongenerator.org" website upload image and get icon file.
+
+

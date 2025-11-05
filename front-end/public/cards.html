@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function bodyload(){
+            fetch("data/jobpostings.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(jobdetails){
+                jobdetails.map(function(job){
+                    var div = document.createElement("div");
+                    div.className = "card m-2 p-2";
+                    div.style.width = "100%";
+                    div.innerHTML = `<div class="card mb-3" style="max-width: 600px;">
+    <div class="row g-0 align-items-center"> <!-- Ensures vertical alignment -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center bg-light">
+            <img src=${job.company.logo}  class="img-fluid" alt="Company Logo" style="max-width: 80%; height: auto;">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">${job.jobDetails.title}</h5>
+                <p class="card-text">${job.jobDetails.description}</p>
+                <p class="card-text"><small class="text-muted">${job.jobDetails.postedDate}</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    `;
+                    document.querySelector("main").appendChild(div);
+                })
+            })
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <main>
+
+    </main>
+</body>
+</html>
+
+

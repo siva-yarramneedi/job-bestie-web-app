@@ -1,0 +1,73 @@
+[
+{
+    "company": {
+      "name": "Oracle Corporation",
+      "url": "https://www.oracle.com",
+      "location": "Bangalore, India",
+      "logo": "./images/oracle.jpg"
+    },
+    "jobDetails": {
+      "postedDate": "2025-02-09",
+      "title": "Software Engineer - Java",
+      "designation": "Software Engineer",
+      "type": "Full-Time",
+      "description": "We are looking for a passionate Software Engineer with experience in Java and Spring Boot...",
+      "rolesAndResponsibilities": [
+        "Develop and maintain Java-based applications using Spring Boot.",
+        "Write clean, scalable, and efficient code.",
+        "Collaborate with cross-functional teams to design and implement new features.",
+        "Ensure code quality, security, and performance."
+      ],
+      "eligibilityCriteria": {
+        "experience": {
+          "min": 0,
+          "max": 2
+        },
+        "qualification": "B.E/B.Tech/MCA in Computer Science or related field",
+        "percentageCriteria": "Minimum 60% in 10th, 12th, and Graduation",
+        "yearOfPassout": {
+          "from": 2022,
+          "to": 2025
+        }
+      },
+      "applyLink": "https://careers.oracle.com/job/12345"
+    }
+},
+
+
+{
+    "company": {
+      "name": "Oracle Corporation",
+      "url": "https://www.oracle.com",
+      "location": "Bangalore, India",
+      "logo": "./images/oracle.jpg"
+    },
+    "jobDetails": {
+      "postedDate": "2025-02-09",
+      "title": "Software Engineer - Java",
+      "designation": "Software Engineer",
+      "type": "Full-Time",
+      "description": "We are looking for a passionate Software Engineer with experience in Java and Spring Boot...",
+      "rolesAndResponsibilities": [
+        "Develop and maintain Java-based applications using Spring Boot.",
+        "Write clean, scalable, and efficient code.",
+        "Collaborate with cross-functional teams to design and implement new features.",
+        "Ensure code quality, security, and performance."
+      ],
+      "eligibilityCriteria": {
+        "experience": {
+          "min": 0,
+          "max": 2
+        },
+        "qualification": "B.E/B.Tech/MCA in Computer Science or related field",
+        "percentageCriteria": "Minimum 60% in 10th, 12th, and Graduation",
+        "yearOfPassout": {
+          "from": 2022,
+          "to": 2025
+        }
+      },
+      "applyLink": "https://careers.oracle.com/job/12345"
+    }
+}
+]
+  

@@ -1,0 +1,420 @@
+[
+    {
+      "company": {
+        "name": "Oracle Corporation",
+        "url": "https://www.oracle.com",
+        "logo": "./images/oracle-logo.svg"
+      },
+      "jobDetails": {
+        "id":"J12340",
+        "postedDate": "09-02-2025",
+        "location": "Bangalore, India",
+        "title": "Software Engineer - Java",
+        "designation": "Software Engineer",
+        "type": "Full-Time",
+        "description": "An Oracle career can span industries, roles, Countries and cultures, giving you the opportunity to flourish in new roles and innovate, while blending work life in. Oracle has thrived through 40+ years of change by innovating and operating with integrity while delivering for the top companies in almost every industry. In order to nurture the talent that makes this happen, we are committed to an inclusive culture that celebrates and values diverse insights and perspectives, a workforce that inspires thought leadership and innovation.",
+        "rolesAndResponsibilities": [
+          "Develop and maintain Java-based applications using Spring Boot.",
+          "Write clean, scalable, and efficient code.",
+          "Collaborate with cross-functional teams to design and implement new features.",
+          "Ensure code quality, security, and performance."
+        ],
+        "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+        "eligibilityCriteria": {
+          "experience": {
+            "min": 0,
+            "max": 2
+          },
+          "qualification": "B.E/B.Tech/MCA in Computer Science or related field",
+          "percentageCriteria": "Minimum 60% in 10th, 12th, and Graduation",
+          "yearOfPassout": {
+            "from": 2022,
+            "to": 2025
+          }
+        },
+        "applyLink": "https://careers.oracle.com/job/12345"
+      }
+    },
+    {
+      "company": {
+        "name": "Google Inc.",
+        "url": "https://careers.google.com",
+        "logo": "./images/google-logo.svg"
+      },
+      "jobDetails": {
+        "id":"J12341",
+        "postedDate": "02-08-2025",
+        "title": "Software Developer - Python",
+        "location": "Hyderabad, India",
+        "designation": "Software Developer",
+        "type": "Full-Time",
+        "description": "Looking for a skilled Python Developer to work on AI and ML project",
+        "rolesAndResponsibilities": [
+          "Develop and optimize AI/ML algorithms in Python.",
+          "Work with large datasets and implement data pipelines.",
+          "Collaborate with product managers and data scientists to deploy models."
+        ],
+        "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+        "eligibilityCriteria": {
+          "experience": {
+            "min": 1,
+            "max": 3
+          },
+          "qualification": "B.Tech/M.Tech in Computer Science or equivalent",
+          "percentageCriteria": "No minimum criteria",
+          "yearOfPassout": {
+            "from": 2021,
+            "to": 2024
+          }
+        },
+        "applyLink": "https://careers.google.com/job/54321"
+      }
+    },
+    {
+      "company": {
+        "name": "Microsoft Corporation",
+        "url": "https://careers.microsoft.com",
+        "logo": "./images/microsoft-logo.svg"
+      },
+      "jobDetails": {
+        "id":"J12342",
+        "postedDate": "02-07-2025",
+        "location": "Pune, India",
+        "title": "Cloud Engineer - Azure",
+        "designation": "Cloud Engineer",
+        "type": "Full-Time",
+        "description": "Hiring an experienced Cloud Engineer with expertise in Azure services",
+        "rolesAndResponsibilities": [
+          "Design and manage Azure cloud infrastructure.",
+          "Develop automation scripts for cloud resource management.",
+          "Ensure security and compliance of cloud-based solutions."
+        ],
+        "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+        "eligibilityCriteria": {
+          "experience": {
+            "min": 2,
+            "max": 5
+          },
+          "qualification": "B.Tech/MCA with specialization in Cloud Computing or equivalent",
+          "percentageCriteria": "Minimum 65% in academics",
+          "yearOfPassout": {
+            "from": 2020,
+            "to": 2024
+          }
+        },
+        "applyLink": "https://careers.microsoft.com/job/67890"
+      }
+    },
+    {
+      "company": {
+        "name": "Amazon",
+        "url": "https://www.amazon.jobs",
+        "logo": "./images/amazon-logo.svg"
+      },
+      "jobDetails": {
+        "id":"J12343",
+        "postedDate": "02-06-2025",
+        "location": "Chennai, India",
+        "title": "Data Analyst - AWS",
+        "designation": "Data Analyst",
+        "type": "Full-Time",
+        "description": "Hiring Data Analysts to analyze and interpret large data sets on AWS",
+        "rolesAndResponsibilities": [
+          "Extract insights from structured and unstructured data.",
+          "Create dashboards and visualizations using AWS QuickSight.",
+          "Collaborate with engineering teams to optimize data pipelines."
+        ],
+        "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+        "eligibilityCriteria": {
+          "experience": {
+            "min": 1,
+            "max": 4
+          },
+          "qualification": "B.Sc/M.Sc in Data Science, Statistics, or relevant field",
+          "percentageCriteria": "Minimum 60% in academics",
+          "yearOfPassout": {
+            "from": 2021,
+            "to": 2024
+          }
+        },
+        "applyLink": "https://www.amazon.jobs/job/112233"
+      }
+    },
+        {
+          "company": {
+            "name": "Tata Consultancy Services (TCS)",
+            "url": "https://www.tcs.com",
+            "logo": "./images/tcs-logo.svg"
+          },
+          "jobDetails": {
+            "id":"J12344",
+            "postedDate": "02-11-2024",
+            "location": "Mumbai, India",
+            "title": "Software Developer - Java",
+            "designation": "Software Developer",
+            "type": "Full-Time",
+            "description": "TCS is hiring passionate Java developers with strong problem-solving skills",
+            "rolesAndResponsibilities": [
+              "Develop and enhance Java-based enterprise applications.",
+              "Work with Spring Boot and Microservices architecture.",
+              "Collaborate with teams to analyze and optimize application performance.",
+              "Ensure software quality and security best practices."
+            ],
+            "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+            "eligibilityCriteria": {
+              "experience": {
+                "min": 0,
+                "max": 3
+              },
+              "qualification": "B.E/B.Tech/MCA in Computer Science or IT",
+              "percentageCriteria": "Minimum 60% in 10th, 12th, and Graduation",
+              "yearOfPassout": {
+                "from": 2021,
+                "to": 2025
+              }
+            },
+            "applyLink": "https://careers.tcs.com/job/12345"
+          }
+        },
+        {
+          "company": {
+            "name": "Infosys",
+            "url": "https://www.infosys.com",
+            "logo": "./images/infosys-logo.svg"
+          },
+          "jobDetails": {
+            "id":"J12345",
+            "postedDate": "02-11-2024",
+            "location": "Bangalore, India",
+            "title": "System Engineer - Java",
+            "designation": "System Engineer",
+            "type": "Full-Time",
+            "description": "Join Infosys as a System Engineer to work on cutting-edge Java applications",
+            "rolesAndResponsibilities": [
+              "Write clean and efficient Java code.",
+              "Participate in full software development lifecycle.",
+              "Work with REST APIs and cloud technologies.",
+              "Troubleshoot, debug, and optimize applications."
+            ],
+            "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+            "eligibilityCriteria": {
+              "experience": {
+                "min": 0,
+                "max": 2
+              },
+              "qualification": "B.E/B.Tech/M.Sc/MCA in relevant fields",
+              "percentageCriteria": "Minimum 65% in 10th, 12th, and Graduation",
+              "yearOfPassout": {
+                "from": 2022,
+                "to": 2025
+              }
+            },
+            "applyLink": "https://careers.infosys.com/job/67890"
+          }
+        },
+        {
+          "company": {
+            "name": "Capgemini",
+            "url": "https://www.capgemini.com",
+            "logo": "./images/capgemini-logo.svg"
+          },
+          "jobDetails": {
+            "id":"J12346",
+            "postedDate": "02-11-2024",
+            "location": "Hyderabad, India",
+            "title": "Associate Software Engineer",
+            "designation": "Associate Software Engineer",
+            "type": "Full-Time",
+            "description": "Capgemini is hiring freshers for Associate Software Engineer roles",
+            "rolesAndResponsibilities": [
+              "Design and develop software solutions using Java and Spring Boot.",
+              "Collaborate with senior developers on project tasks.",
+              "Ensure software quality through testing and debugging.",
+              "Participate in Agile development methodologies."
+            ],
+            "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+            "eligibilityCriteria": {
+              "experience": {
+                "min": 0,
+                "max": 1
+              },
+              "qualification": "B.E/B.Tech/MCA in Computer Science, IT or ECE",
+              "percentageCriteria": "Minimum 60% in Graduation",
+              "yearOfPassout": {
+                "from": 2023,
+                "to": 2025
+              }
+            },
+            "applyLink": "https://careers.capgemini.com/job/11223"
+          }
+        },
+        {
+          "company": {
+            "name": "Accenture",
+            "url": "https://www.accenture.com",
+            "logo": "./images/accenture-logo.svg"
+          },
+          "jobDetails": {
+            "id":"J12347",
+            "postedDate": "02-12-2024",
+            "location": "Pune, India",
+            "title": "Software Engineer - Full Stack",
+            "designation": "Software Engineer",
+            "type": "Full-Time",
+            "description": "Accenture is looking for Full Stack Developers skilled in Java, Angular, and Cloud technologies",
+            "rolesAndResponsibilities": [
+              "Develop scalable web applications using Java and Angular.",
+              "Work with cloud platforms like AWS or Azure.",
+              "Ensure code quality and maintainability.",
+              "Participate in Agile team discussions and provide technical solutions."
+            ],
+            "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+            "eligibilityCriteria": {
+              "experience": {
+                "min": 1,
+                "max": 3
+              },
+              "qualification": "B.E/B.Tech/MCA in Computer Science or IT",
+              "percentageCriteria": "Minimum 60% in 10th, 12th, and Graduation",
+              "yearOfPassout": {
+                "from": 2021,
+                "to": 2025
+              }
+            },
+            "applyLink": "https://careers.accenture.com/job/44556"
+          }
+        },
+
+            {
+              "company": {
+                "name": "Cognizant",
+                "url": "https://www.cognizant.com",
+                "logo": "./images/cognizant-logo.svg"
+              },
+              "jobDetails": {
+                "id":"J12348",
+                "postedDate": "02-10-2024",
+                "location": "Chennai, India",
+                "title": "Programmer Analyst Trainee",
+                "designation": "Programmer Analyst Trainee",
+                "type": "Full-Time",
+                "description": "Cognizant is hiring fresh graduates for the role of Programmer Analyst Trainee",
+                "rolesAndResponsibilities": [
+                  "Develop and maintain software applications using Java and Python.",
+                  "Work in Agile teams to deliver high-quality software solutions.",
+                  "Debug, test, and optimize code for performance and security.",
+                  "Collaborate with senior developers and business analysts."
+                ],
+                "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+                "eligibilityCriteria": {
+                  "experience": {
+                    "min": 0,
+                    "max": 1
+                  },
+                  "qualification": "B.E/B.Tech/MCA in Computer Science, IT or ECE",
+                  "percentageCriteria": "Minimum 60% in Graduation",
+                  "yearOfPassout": {
+                    "from": 2023,
+                    "to": 2025
+                  }
+                },
+                "applyLink": "https://careers.cognizant.com/job/78901"
+              }
+            },
+            {
+              "company": {
+                "name": "Zoho Corporation",
+                "url": "https://www.zoho.com",
+                "logo": "./images/zoho-logo.svg"
+              },
+              "jobDetails": {
+                "id":"J12349",
+                "postedDate": "08-09-2024",
+                "location": "Chennai, India",
+                "title": "Software Developer",
+                "designation": "Software Developer",
+                "type": "Full-Time",
+                "description": "Zoho is looking for passionate software developers to work on innovative products",
+                "rolesAndResponsibilities": [
+                  "Develop web and mobile applications using Java, Python, and JavaScript.",
+                  "Collaborate with UI/UX teams for a seamless user experience.",
+                  "Ensure software quality by writing unit tests and conducting code reviews.",
+                  "Optimize application performance and troubleshoot issues."
+                ],
+                "requirements": [
+          "In-depth knowledge of modern HTML5, CSS3, JavaScript JQuery",
+          "Familiar with at least one programming language java and JavaScript",
+          "Basic Knowledge of Search Engine Optimization techniques will be a plus",
+          "Aggressive problem diagnosis and creative problem-solving skills",
+          "Ability to work and thrive in a fast-paced environment"
+        ],
+                "eligibilityCriteria": {
+                  "experience": {
+                    "min": 0,
+                    "max": 2
+                  },
+                  "qualification": "B.E/B.Tech/M.Sc/MCA in relevant fields",
+                  "percentageCriteria": "No percentage criteria, skills matter!",
+                  "yearOfPassout": {
+                    "from": 2022,
+                    "to": 2025
+                  }
+                },
+                "applyLink": "https://careers.zoho.com/job/56789"
+              }
+            }
+        ]          

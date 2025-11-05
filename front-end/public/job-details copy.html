@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+          main {
+            text-align: center;
+            justify-content: center;
+            color: white;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #212b36;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        header {
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(33, 43, 54, 1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            height: 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            color: white;
+        }
+
+        /* Left section - Logo and Title */
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-left img {
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+        }
+
+        .nav-left .site-name {
+            font-size: 28px;
+            font-weight: normal;
+            color: white;
+        }
+
+        .nav-left .site-name span:first-child {
+            font-weight: bold;
+            color: #ff5733;
+        }
+
+        /* Center section - Navigation Links & Search Bar */
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-center input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* Right section - About Us, Sign Up, Login */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .nav-left a {
+            text-decoration: none;
+        }
+
+        .nav-options {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+            /* Normal state: Slight rounded edges */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-options:hover {
+            background-color: #ff5733;
+            /* Change background on hover */
+            color: white;
+            border-radius: 50px;
+            /* Makes it pill-shaped on hover */
+            padding: 8px 20px;
+            /* Slight expansion for smooth effect */
+        }
+
+
+                /* FOOTER*/
+
+
+        footer {
+            background-color: #121212;
+            /* Dark background for contrast */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #ff5733;
+            /* Highlight color */
+        }
+
+        .footer-column p {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-column i {
+            margin-right: 8px;
+            font-size: 18px;
+            color: #ff5733;
+        }
+
+        .designer {
+            padding-top: 30px;
+            color: gray;
+            font-size: medium;
+        }
+
+        .designer span {
+            color: #ff5733;
+            font-weight: bold;
+        }
+
+        .copyright {
+            width: 100%;
+            background-color: #0d0d0d;
+            /* Slightly darker shade */
+            color: #bbb;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .main-heading {
+            padding-top: 120px; /* Push down from fixed header */
+            text-align: center;
+        }
+
+        .main-heading h1 {
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Main page Styling */
+        #company-logo{
+            width: 350px;
+            height: 100px;
+            border: 1px solid white;
+            border-radius: 50px;
+            margin-top: -20px;
+            margin-bottom: 10px;
+            padding: 15px;
+        }
+        ul{list-style-type: none;}
+        
+        .job-link{
+        margin: 20px;
+        padding: 20px;
+        }
+        .btn-apply {
+        display: inline-block;
+        background-color: #ff5733;
+        color: white;
+        padding: 10px 30px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        border: none;
+        font-weight: bold;
+        }
+
+        .btn-apply:hover {
+        background-color: white;
+        color: #ff5733;
+        border-radius: 50px;
+        cursor: pointer;
+        }
+        
+        .job-details-container h3 {
+        display: block;
+        background-color: #2c3e50; /* Dark background for contrast */
+        color: #ff5733; /* Bright orange-red text */
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        }
+        #company-website{
+            text-decoration: none;
+            color: #ff5733;
+        }
+        .data-list dt{
+            color:#66a2c0;
+        }
+        .job-info strong{
+            color:#66a2c0;
+        }
+        .criteria-heading {
+            font-weight: bold;
+            color:#66a2c0;
+            
+        }
+
+        
+    </style>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get job ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const jobId = urlParams.get("id");
+
+            if (!jobId) {
+                document.body.innerHTML = "<h2>Invalid Job ID</h2>";
+                return;
+            }
+
+            // Fetch JSON data
+            fetch("data/jobpostings.json")
+                .then(response => response.json())
+                .then(jobDetails => {
+                    let job = jobDetails.find(j => j.jobDetails.id == jobId);
+
+                    if (!job) {
+                        document.body.innerHTML = "<h2>Job Not Found</h2>";
+                        return;
+                    }
+                    //to keep browser bar title as "Job Details - Company Name" dynamically
+                    document.getElementById("title").innerText = "Job Details - "+job.company.name;
+                    //Description
+                    document.getElementById("job-description").innerText = job.jobDetails.description;
+                    //Roles & Responsibilities
+                    let rolesList = document.getElementById("roles-list");
+                    job.jobDetails.rolesAndResponsibilities.forEach(role => {
+                        let li = document.createElement("li");
+                        li.innerText = role;
+                        rolesList.appendChild(li);
+                    });
+                    //Job-Info
+                    document.getElementById("job-title").innerText = job.company.name+" hiring for "+job.jobDetails.title;
+                    document.getElementById("company-logo").src = job.company.logo;
+                    document.getElementById("company-name").innerText = job.company.name;
+                    document.getElementById("company-website").href = job.company.url;
+                    document.getElementById("company-website").innerText = job.company.url;
+                    document.getElementById("job-role").innerText = job.jobDetails.designation;
+                    document.getElementById("job-type").innerText = job.jobDetails.type;
+                    document.getElementById("job-location").innerText = job.company.location;
+                    document.getElementById("posted-date").innerText = job.jobDetails.postedDate;
+                    //Requirements
+                    let requirementsList = document.getElementById("requirements-list");
+                    job.jobDetails.requirements.forEach( requirement => {
+                        let li = document.createElement("li");
+                        li.innerText = requirement;
+                        requirementsList.appendChild(li);
+                    });
+
+                    document.getElementById("eligibility").innerHTML = 
+                        `<span class="criteria-heading">Experience: </span> ${job.jobDetails.eligibilityCriteria.experience.min} - ${job.jobDetails.eligibilityCriteria.experience.max} years |  
+                        <span class="criteria-heading"> Qualification: </span> ${job.jobDetails.eligibilityCriteria.qualification}`;
+                        
+                        document.getElementById("passout").innerHTML = 
+                            `<span class="criteria-heading">Year of Passout: </span> ${job.jobDetails.eligibilityCriteria.yearOfPassout.from} - ${job.jobDetails.eligibilityCriteria.yearOfPassout.to}  | 
+                             <span class="criteria-heading"> Percentage Criteria: </span> ${job.jobDetails.eligibilityCriteria.percentageCriteria}`;
+
+
+                    document.getElementById("apply-link").href = job.jobDetails.applyLink;
+                });
+        });
+
+    </script>
+</head>
+
+
+<body class="container-fluid">
+        <header>
+            <nav>
+                <!-- Left Section - Logo & Title -->
+                <div class="nav-left">
+                    <a href="index.html">
+                        <img src="images/jobbestie-logo.jpg" alt="JobBestie Logo">
+                        <span class="site-name"><span>JOB</span>BESTIE</span>
+                    </a>
+                </div>
+    
+                <!-- Center Section - Navigation Links & Search Bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search a Job..." aria-label="Search">
+                    <button class="btn btn-outline-light nav-options" type="submit"><b>Search</b></button>
+                </form>
+    
+                <!-- Right Section - About Us, Sign Up, Login -->
+                <div class="nav-right">
+                    <a href="job.html" class="nav-options"> Home<br></a>
+                    <a href="#about" class="nav-options"> About Us</a>
+                    <a href="signup.html" class="nav-options bi bi-person"> Sign Up</a>
+                    <a href="login.html" class="nav-options bi bi-lock"> Login</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="main-heading" >
+            <h1 id="job-title"></h1>
+        </section>
+
+
+        <main>
+            <div class="job-details-container">
+                <div class="job-container">
+                    <img id="company-logo" src="" alt="Company Logo">
+                <div>
+
+
+                <div class="instructions">
+                    <h3>Instructions to Follow Before Applying for a Job</h3>
+                    <dl class="data-list">
+                            <dt>1. Read the Job Description</dt>
+                            <dd>Carefully go through the job description to understand the role, responsibilities, and required skills.</dd>
+                            <dt>2. Check Your Skills</dt>
+                            <dd>Compare the required skills with your own. Identify your strengths and areas for improvement.</dd>
+                            <dt>3. Verify Eligibility Criteria</dt>
+                            <dd>Ensure you meet the required qualifications, experience, and any other criteria mentioned in the job posting.</dd>
+                            <dt>4. Update Your Resume & Cover Letter</dt>
+                            <dd>Customize your resume and cover letter to highlight relevant skills and experiences that match the job.</dd>
+                            <dt>5. Research the Company</dt>
+                            <dd>Learn about the company’s work, values, and culture to show genuine interest during the application process.</dd>
+                    </dl>
+                </div>
+
+                <div>
+                    <h3>Description</h3>
+                    <p id="job-description"></p>
+                </div>
+
+                <div class="roles">
+                    <h3>Roles & Responsibilities</h3>
+                    <ul id="roles-list"></ul>
+                </div>
+
+                <div class="job-info">
+                    <h3>Job Info</h3>
+                    <p><strong>Company Name:</strong> <span id="company-name"></span></p>
+                    <p><strong>Company Website:</strong> <a id="company-website" href="#"></a></p>
+                    <p><strong>Job Role:</strong> <span id="job-role"></span></p>
+                    <p><strong>Location:</strong> <span id="job-location"></span></p>
+                    <p><strong>Type:</strong> <span id="job-type"></span></p>
+                    <p><strong>Posted Date:</strong> <span id="posted-date"></span></p>
+                </div>
+
+                <div class="requirements">
+                    <h3>Requirements</h3>
+                    <ul id="requirements-list"></ul>
+                </div>
+
+                <div class="criteria">
+                    <h3>Eligibility Criteria</h3>
+                    <p id="eligibility"></p>
+                    <p id="passout"></p>
+                </div>
+
+                <div class="job-link">
+                    <a id="apply-link" class="btn-apply" href="#" target="_blank">Apply Now</a>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer-container">
+                <!-- Logo Section -->
+                <div class="footer-column">
+                    <img src="images/jobbestie-logo.jpg" alt="JobBestie Logo" width="80" height="80">
+                    <div class="designer">Designed By -<span> Siva Y</span></div>
+                </div>
+    
+                <!-- About Us Section -->
+                <div class="footer-column" id="about">
+                    <h3>About Us</h3>
+                    <p>JobBestie connects job seekers with top companies, offering real-time job opportunities for freshers
+                        and professionals.</p>
+                </div>
+    
+                <!-- Contact Section -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="bi bi-house"></i> Andhra Pradesh</p>
+                    <p><i class="bi bi-envelope"></i> jobbestie@gmail.com</p>
+                    <p><i class="bi bi-telephone"></i> +91 1234567890</p>
+                </div>
+    
+                <!-- Follow Us Section -->
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <p><i class="bi bi-linkedin"></i> LinkedIn</p>
+                    <p><i class="bi bi-telegram"></i> Telegram</p>
+                    <p><i class="bi bi-instagram"></i> Instagram</p>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            &copy; 2025 JobBestie.com | All Rights Reserved
+        </div>
+    </body>
+
+
+</body>
+</html>

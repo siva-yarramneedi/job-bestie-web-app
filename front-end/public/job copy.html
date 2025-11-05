@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="job search, latest jobs, fresher jobs, experienced jobs">
+    <meta name="description"
+        content="Discover the latest jobs for freshers and experienced professionals with JobBestie. Find top openings, daily updates, and apply online with ease">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>Job Bestie</title>
+    <link rel="stylesheet" href="../src/job.css">
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("http://localhost:8080/",{
+            method:"GET",
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+        .then(response => {
+            if(!response.ok){
+                throw new Error("HTTP error! status: "+response.status);
+            } 
+            return response.json();
+        })
+        .then(jobDetails => {
+                const main = document.getElementById("main");
+                main.innerHTML = ""; // Clear previous content
+    
+                jobDetails.forEach(job => {
+                    let jobId = job.id; // Assuming 'id' is present in JSON
+    
+                    // Create a clickable card as a link
+                    let card = document.createElement("a");
+                    card.target="_blank";
+                    card.href = `job-details.html?id=${jobId}`; // Send job ID in URL
+                    card.classList.add("card", "mb-3");
+    
+                    card.innerHTML = `
+                        <div class="row g-0 align-items-center">
+                            <div class="col-md-4 d-flex justify-content-center align-items-center bg-light">
+                                <img src="${job.logo}" crossorigin="anonymous" type="image/svg+xml" class="img-fluid" alt="Company Logo" style="max-width: 80%; height: auto;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">${job.title}</h5>
+                                    <p class="card-text">${job.description.substring(0, 100)}...</p>
+                                    <p class="card-text"><small class="text-muted">${job.postedDate}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+    
+                    main.appendChild(card);
+                });
+            });
+    });
+    
+    </script>
+
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav>
+            <!-- Left Section - Logo & Title -->
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="images/jobbestie-logo.jpg" alt="JobBestie Logo">
+                    <span class="site-name"><span>JOB</span>BESTIE</span>
+                </a>
+            </div>
+
+            <!-- Center Section - Navigation Links & Search Bar -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search a Job..." aria-label="Search">
+                <button class="btn btn-outline-light nav-options" type="submit"><b>Search</b></button>
+            </form>
+
+            <!-- Right Section - About Us, Sign Up, Login -->
+            <div class="nav-right">
+                <a href="#home" class="nav-options"> Home</a>
+                <a href="#about" class="nav-options"> About Us</a>
+                <a href="signup.html" class="nav-options bi bi-person"> Sign Up</a>
+                <a href="login.html" class="nav-options bi bi-lock"> Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-heading">
+        <h1>Latest Job Notifications</h1>
+    </section>
+
+    <main id="main" class="card-container">
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-column">
+                <img src="images/jobbestie-logo.jpg" alt="JobBestie Logo" width="80" height="80">
+                <div class="designer">Designed By -<span> Siva Y</span></div>
+            </div>
+
+            <!-- About Us Section -->
+            <div class="footer-column" id="about">
+                <h3>About Us</h3>
+                <p>JobBestie connects job seekers with top companies, offering real-time job opportunities for freshers
+                    and professionals.</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="bi bi-house"></i> Andhra Pradesh</p>
+                <p><i class="bi bi-envelope"></i> jobbestie@gmail.com</p>
+                <p><i class="bi bi-telephone"></i> +91 1234567890</p>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p><i class="bi bi-linkedin"></i> LinkedIn</p>
+                <p><i class="bi bi-telegram"></i> Telegram</p>
+                <p><i class="bi bi-instagram"></i> Instagram</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        &copy; 2025 JobBestie.com | All Rights Reserved
+    </div>
+</body>
+</html>

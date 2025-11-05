@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="job search, latest jobs, fresher jobs, experienced jobs">
+    <meta name="description"
+        content="Discover the latest jobs for freshers and experienced professionals with JobBestie. Find top openings, daily updates, and apply online with ease">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <title>Job Bestie</title>
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #212b36;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        header {
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(33, 43, 54, 1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            height: 80px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            color: white;
+        }
+
+        /* Left section - Logo and Title */
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-left img {
+            width: 75px;
+            height: 75px;
+            border-radius: 5px;
+        }
+
+        .nav-left .site-name {
+            font-size: 28px;
+            font-weight: normal;
+            color: white;
+        }
+
+        .nav-left .site-name span:first-child {
+            font-weight: bold;
+            color: #ff5733;
+        }
+
+        /* Center section - Navigation Links & Search Bar */
+        .nav-center {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-center input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* Right section - About Us, Sign Up, Login */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .nav-left a {
+            text-decoration: none;
+        }
+
+        .nav-options {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+            /* Normal state: Slight rounded edges */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-options:hover {
+            background-color: #ff5733;
+            /* Change background on hover */
+            color: white;
+            border-radius: 50px;
+            /* Makes it pill-shaped on hover */
+            padding: 8px 20px;
+            /* Slight expansion for smooth effect */
+        }
+
+        main {
+            text-align: center;
+            justify-content: center;
+            color: white;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allows wrapping for multiple rows */
+            justify-content: space-around;
+            padding-top: 10px;
+            text-decoration: unset;
+        }
+        .card-hyper{
+            text-decoration: unset;
+        }
+
+        .card {
+            width: 49%;
+            /* Each card takes 49% of the row width */
+            background-color: #f5f5f5;
+            padding: 15px;
+            color: #1a237e;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            color: white;
+            background-color: #ff5733;
+            border: 1px solid white;
+            border-radius: 40px;
+            cursor: pointer;
+
+        }
+
+
+
+        /* FOOTER*/
+
+        footer {
+            background-color: #121212;
+            /* Dark background for contrast */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+            text-align: left;
+        }
+
+        .footer-column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #ff5733;
+            /* Highlight color */
+        }
+
+        .footer-column p {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-column i {
+            margin-right: 8px;
+            font-size: 18px;
+            color: #ff5733;
+        }
+
+        .designer {
+            padding-top: 30px;
+            color: gray;
+            font-size: medium;
+        }
+
+        .designer span {
+            color: #ff5733;
+            font-weight: bold;
+        }
+
+        .copyright {
+            width: 100%;
+            background-color: #0d0d0d;
+            /* Slightly darker shade */
+            color: #bbb;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        .main-heading {
+    padding-top: 120px; /* Push down from fixed header */
+    text-align: center;
+/* Space between heading and cards */
+}
+
+.main-heading h1 {
+    color: white;
+    font-weight: bold;
+}
+
+    </style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("data/jobpostings.json")
+        .then(response => response.json())
+        .then(jobdetails => {
+            const mainSection = document.getElementById("main"); // Select the main section
+
+            jobdetails.forEach(job => {
+                // Create a card div
+                const card = document.createElement("div");
+                card.classList.add("card", "mb-3");
+
+                // Card structure using Template Literal
+                card.innerHTML = `<a href="#" class="card-hyper">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center bg-light">
+                            <img src="${job.company.logo}" class="img-fluid" alt="Company Logo" style="max-width: 80%; height: auto;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">${job.jobDetails.title}</h5>
+                                <p class="card-text">${job.jobDetails.description}</p>
+                                <p class="card-text"><small class="text-muted">${job.jobDetails.postedDate}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>`;
+
+                // Append the created card to the main section
+                mainSection.appendChild(card);
+            });
+        })
+        .catch(error => console.error("Error fetching job data:", error));
+});
+</script>
+
+</head>
+
+<body class="container-fluid">
+    <header>
+        <nav>
+            <!-- Left Section - Logo & Title -->
+            <div class="nav-left">
+                <a href="index.html">
+                    <img src="images/jobbestie-logo.jpg" alt="JobBestie Logo">
+                    <span class="site-name"><span>JOB</span>BESTIE</span>
+                </a>
+            </div>
+
+            <!-- Center Section - Navigation Links & Search Bar -->
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search a Job..." aria-label="Search">
+                <button class="btn btn-outline-light nav-options" type="submit"><b>Search</b></button>
+            </form>
+
+            <!-- Right Section - About Us, Sign Up, Login -->
+            <div class="nav-right">
+                <a href="#about" class="nav-options">About Us</a>
+                <a href="signup.html" class="nav-options bi bi-person"> Sign Up</a>
+                <a href="login.html" class="nav-options bi bi-lock"> Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-heading">
+        <h1>Latest Job Notifications</h1>
+    </section>
+
+    <main id="main" class="card-container">
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Section -->
+            <div class="footer-column">
+                <img src="images/jobbestie-logo.jpg" alt="JobBestie Logo" width="80" height="80">
+                <div class="designer">Designed By -<span> Siva Y</span></div>
+            </div>
+
+            <!-- About Us Section -->
+            <div class="footer-column" id="about">
+                <h3>About Us</h3>
+                <p>JobBestie connects job seekers with top companies, offering real-time job opportunities for freshers
+                    and professionals.</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><i class="bi bi-house"></i> Andhra Pradesh</p>
+                <p><i class="bi bi-envelope"></i> jobbestie@gmail.com</p>
+                <p><i class="bi bi-telephone"></i> +91 1234567890</p>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p><i class="bi bi-linkedin"></i> LinkedIn</p>
+                <p><i class="bi bi-telegram"></i> Telegram</p>
+                <p><i class="bi bi-instagram"></i> Instagram</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        &copy; 2025 JobBestie.com | All Rights Reserved
+    </div>
+</body>
+</html>
